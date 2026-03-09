@@ -1,0 +1,19 @@
+#include <stdio.h>
+# include <string.h>
+int main() {
+    char feedback[100];  
+    char reversed[100];  
+    int length, i, j = 0;
+    
+    scanf("%s", feedback);  
+
+    length = strlen(feedback);
+    for (i = length - 1; i >= 0; i--) {
+        reversed[j] = feedback[i];
+        j++;
+    }
+    reversed[j] = '\0'; 
+    printf("%s\n", reversed);  
+
+    return 0;
+}

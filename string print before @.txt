@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    char before[100];  
+    scanf("%[^@]", before);  
+
+    printf("%s\n", before);
+
+    return 0;
+}

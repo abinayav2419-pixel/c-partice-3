@@ -1,0 +1,13 @@
+# include <stdio.h>
+int main(){
+    char str[100];
+    int i,lenght=0;
+    scanf("%s",&str);
+    
+    for(i=0;str[i]!='\0';i++){
+        lenght++;
+    }
+    printf("%d",lenght);
+    
+    return 0;
+}
