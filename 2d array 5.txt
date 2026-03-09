@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main() {
+    int R, C;
+    scanf("%d %d", &R, &C);
+
+    int salary[R][C];
+    
+    for(int i = 0; i < R; i++) {
+        for(int j = 0; j < C; j++) {
+            scanf("%d", &salary[i][j]);
+        }
+    }
+
+    float minAvg = 1e9;
+    int deptIndex = 0;
+
+    for(int i = 0; i < R; i++) {
+        int sum = 0;
+        for(int j = 0; j < C; j++) {
+            sum += salary[i][j];
+        }
+
+        float avg = (float)sum / C;
+
+        if(avg < minAvg) {
+            minAvg = avg;
+            deptIndex = i;
+        }
+    }
+
+    printf("%d", deptIndex);
+
+    return 0;
+}
