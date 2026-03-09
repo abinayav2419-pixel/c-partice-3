@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int R, C;
+    scanf("%d %d", &R, &C);
+    int matrix[R][C];
+    for(int i=0;i<R;i++)
+        for(int j=0;j<C;j++)
+            scanf("%d", &matrix[i][j]);
+    int sum=0;
+    for(int j=0;j<C;j++) sum += matrix[0][j] + matrix[R-1][j];
+    for(int i=1;i<R-1;i++) sum += matrix[i][0] + matrix[i][C-1];
+    printf("%d\n", sum);
+    return 0;
+}
