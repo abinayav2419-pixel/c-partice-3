@@ -1,0 +1,17 @@
+# include<stdio.h>
+ 
+  char * checkEvenOdd(int number){
+       if (number%2==0)
+       return "Even";
+       else
+       return "Odd";
+   }
+   
+   int main(){
+        int N;
+        scanf("%d",&N);
+        
+        printf("%s",checkEvenOdd(N));
+        
+        return 0;
+   }
