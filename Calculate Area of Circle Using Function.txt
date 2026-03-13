@@ -1,0 +1,17 @@
+# include <stdio.h>
+ 
+  float areaOfCircle(int radius){
+      const float pi=3.14;
+      return pi*radius*radius;
+  }
+  int main(){
+      int N;
+      scanf("%d",&N);
+      
+     float total= areaOfCircle(N);
+     
+     printf("%.2f",total);
+     return 0;
+  }
+  
+  
