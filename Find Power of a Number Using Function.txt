@@ -1,0 +1,15 @@
+# include<stdio.h>
+int power(int base,int exponent){
+    int result =1;
+    for (int i=1;i<=exponent;i++){
+        result =result*base;
+    }
+    return result;
+}
+int main(){
+    int base,exponent,result;
+    scanf("%d %d",&base,&exponent);
+    result = power(base,exponent);
+    printf("%d",result);
+    return 0;
+}
